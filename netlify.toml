@@ -1,0 +1,37 @@
+[[redirects]]
+  from = "https://loson.cz/*"
+  to = "https://nandor.loson.cz/:splat"
+  force = true
+
+[[redirects]]
+  from = "https://www.loson.cz/*"
+  to = "https://nandor.loson.cz/:splat"
+  force = true
+
+[[redirects]]
+  from = "https://mta-sts.loson.cz/.well-known/mta-sts.txt"
+  to = "https://mta-sts.loson.cz/.well-known/mta-sts.txt"
+
+[[redirects]]
+  from = "https://mta-sts.loson.cz/*"
+  to = "https://nandor.loson.cz/:splat"
+  force = true
+
+[[redirects]]
+  from = "https://nandor.loson.cz/.well-known/mta-sts.txt"
+  to = "https://mta-sts.loson.cz/.well-known/mta-sts.txt"
+  force = true
+
+[[redirects]]
+  from = "https://nandor.loson.cz/discord"
+  to = "https://discord.gg/QX6BkkFnwv"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = '''
+      max-age=31536000;
+      includeSubDomains;
+      preload'''
+    X-Content-Type-Options = "nosniff"
+    Onion-Location = "https://nandorls3ql5zipsvccxd57jtxwgee2u4raler6xag32s2iknhptnaqd.onion"
