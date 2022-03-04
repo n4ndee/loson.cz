@@ -26,6 +26,11 @@
   from = "https://nandor.loson.cz/discord"
   to = "https://discord.gg/QX6BkkFnwv"
 
+[[redirects]]
+  from = "https://loson-cz.netlify.app/*"
+  to = "https://nandor.loson.cz/:splat"
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
